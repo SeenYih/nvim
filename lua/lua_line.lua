@@ -22,7 +22,7 @@ require('lualine').setup {
   },
   sections = {
     -- vim mode
-    lualine_a = {'mode','branch'},
+    lualine_a = {'mode'},
     --lualine_b = {'branch', 'diff', 'diagnostics'},
     lualine_c = {'filename'},
     -- fileformat == 系统文件格式

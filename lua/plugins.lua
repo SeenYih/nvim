@@ -13,16 +13,18 @@ require('packer').startup(function()
   use "Pocco81/AutoSave.nvim"
 
 	-- tree
-  use {'kyazdani42/nvim-tree.lua',requires = {'kyazdani42/nvim-web-devicons'}}
+  use 'kyazdani42/nvim-tree.lua'
+
+  use 'kyazdani42/nvim-web-devicons'
 
 	-- status line
-  use {'nvim-lualine/lualine.nvim'}
+  use 'nvim-lualine/lualine.nvim'
 
 	-- treesitter(代码高亮)
 	use 'nvim-treesitter/nvim-treesitter'
 
 	-- bufferline
-	use {'akinsho/bufferline.nvim',tag = "v2.*"}
+	use 'akinsho/bufferline.nvim'
 
 	--cs 替换 ds 删除 yss 添加
   use 'tpope/vim-surround'
@@ -32,14 +34,23 @@ require('packer').startup(function()
 
   -- lsp
   use 'neovim/nvim-lspconfig'
-  use "williamboman/nvim-lsp-installer"
+  use 'williamboman/nvim-lsp-installer'
 
-	-- 缩进
-	--use "lukas-reineke/indent-blankline.nvim"
+	-- indent
+	use 'lukas-reineke/indent-blankline.nvim'
 
 	-- emmet
 	use 'mattn/emmet-vim'
+	
+  -- css color
+  use 'NvChad/nvim-colorizer.lua'
 
+  -- 注释
+  use 'numToStr/Comment.nvim'
+
+  -- 浮动终端
+	use 'akinsho/toggleterm.nvim'
+  
 	-- snippets
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lua'

@@ -16,11 +16,11 @@ map("n", "e", "<nop>", opt)--++
 -------------------------------------
 map("n", "b", "<nop>", opt)
 map("n", "R", "<nop>", opt)
-map("n", "T", "<nop>", opt)
 map("n", "<space>", "<nop>", opt)
 map("n", "<LEADER>", "<nop>", opt)
 
 -------------------------------------
+map("n", "T", "<nop>", opt)
 map("n", "`", "<nop>", opt)
 map("n", "t", "<nop>", opt)
 map("n", "M", "<nop>", opt)
@@ -40,6 +40,7 @@ map("n", "N", "<nop>", opt)
 --save and quit
 map("n", "S", ":w!<CR>", opt)
 map("n", "Q", ":q!<CR>", opt)
+-- g
 
 --split windows
 map("n", "sr", ":set splitright<CR>:vsplit<CR>", opt)
@@ -89,6 +90,9 @@ map("n", "ss", ":marks<CR>", opt)
 map("n", "sm", ":delmarks!<CR>", opt)
 map("n", "sc", ":delmarks ", opt)
 
+
+map("n", "T", ":ColorizerToggle<CR>", opt)
+
  --____          _ _       _     
 --/ ___|_      _(_) |_ ___| |__  
 --\___ \ \ /\ / / | __/ __| '_ \ 
@@ -116,7 +120,7 @@ map("n", "t", ":NvimTreeToggle<CR>", opt)
 --| |_  | |/ _` | |/ _ \ __|
 --|  _| | | (_| | |  __/ |_ 
 --|_|   |_|\__, |_|\___|\__|
-         --|___/            
+--      --|___/            
 map("n", "M", ":r !figlet ", opt)
 
  --____         __  __           _     _            
@@ -137,7 +141,7 @@ map("n", "g9", ":BufferLineGoToBuffer 9<CR>", opt)
 map("n", "gb", ":BufferLinePick<CR>", opt)
 map("n", "gc", ":BufferLinePickClose<CR>", opt)
 map("n", "dl", ":BufferLineCloseRight<CR>", opt)
-map("n", "dh", ":BufferLineCloseleft<CR>", opt)
+map("n", "dh", ":BufferLineCloseLeft<CR>", opt)
 
  --_____                          _   
 --| ____|_ __ ___  _ __ ___   ___| |_ 

@@ -7,7 +7,7 @@ end
 Nvimtree.setup({
   sort_by = "case_sensitive",
   view = {
-		width = 20,
+		width = 25,
     height = 30,
 		preserve_window_proportions = true,
 		signcolumn = "no",

@@ -3,6 +3,15 @@ vim.opt.number = true
 --相对行号
 vim.opt.relativenumber = true
 
+--tab键替换位空格
+vim.opt.expandtab = true
+--不可见字符显示
+vim.opt.list = true
+vim.opt.listchars:append("space:·")
+--vim.opt.listchars:append("trail:+")
+--vim.opt.listchars:append("tab:··")
+--vim.opt.listchars:append("eol:↴")
+
 --高亮所在行
 vim.opt.cursorline = true
 
