@@ -49,7 +49,7 @@ require('packer').startup(function()
   use 'numToStr/Comment.nvim'
 
   -- 浮动终端
-	use 'akinsho/toggleterm.nvim'
+	--use 'akinsho/toggleterm.nvim'
   
 	-- snippets
   use 'hrsh7th/nvim-cmp'
